@@ -1,4 +1,4 @@
-const http = require('http');
+//const http = require('http');
 const https = require('https');
 const express = require('express');
 const app = express();
@@ -12,5 +12,5 @@ app.get('/', (req, res) => {
 
 app.use('/meep', meep);
 
-http.createServer(app).listen(80);
+//http.createServer(app).listen(80);
 https.createServer({}, app).listen(443);
