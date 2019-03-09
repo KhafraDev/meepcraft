@@ -1,0 +1,29 @@
+<!-- views/pages/stats.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../include/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../include/header %>
+</header>
+
+<main>
+    <table class="table table-sm table-dark">
+        <tbody>
+            <% posts.forEach(item => { %>
+                <tr><th scope="row"><strong><%= item.title %></strong></th><td><%= item.type %></td><td>http://meepcraft.com/<%= item.url %></td><td><%= item.date %></td></tr>
+            <% }); %>
+        </tbody>
+      </table>
+</main>
+
+<footer>
+    <% include ../include/footer %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- views/pages/stats.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../include/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../include/header %>
+</header>
+
+<main>
+    <table class="table table-sm table-dark">
+        <tbody>
+          <tr><th scope="row"><strong>Forum Members Online</strong></th><td><%= forumsOnline %></td></tr>
+          <tr><th scope="row"><strong>Forum Members Online Total</strong></th><td><%= forumsOnlineTotal %></td></tr>
+          <tr><th scope="row"><strong>Members</strong></th><td><%= forumsOnlineMembers %></td></tr>
+          <tr><th scope="row"><strong>Guests</strong></th><td><%= forumsOnlineGuests %></td></tr>
+          <tr><th scope="row"><strong>Robots</strong></th><td><%= forumsOnlineRobots %></td></tr>
+          <tr><th scope="row"><strong>In-Game</strong></th><td><%= gameOnline %></td></tr>
+        </tbody>
+      </table>
+</main>
+
+<footer>
+    <% include ../include/footer %>
+</footer>
+
+</body>
+</html>

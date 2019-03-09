@@ -1,0 +1,32 @@
+<!-- views/pages/stats.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../include/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../include/header %>
+</header>
+
+<main>
+    <table class="table table-sm table-dark">
+        <tbody>
+          <tr><th scope="row"><strong>Threads</strong></th><td><%= threads %></td></tr>
+          <tr><th scope="row"><strong>Messages</strong></th><td><%= messages %></td></tr>
+          <tr><th scope="row"><strong>Members</strong></th><td><%= members %></td></tr>
+          <tr><th scope="row"><strong>Record Members Online</strong></th><td><%= recordMembers %></td></tr>
+          <tr><th scope="row"><strong>Latest Member</strong></th><td><%= latestMember %></p></td></tr>
+          <tr><th scope="row"><strong>Latest Member URL</strong></th><td><a href='<%= latestMemberURL %>'><%= latestMemberURL %></a></td></tr>
+        </tbody>
+      </table>
+</main>
+
+<footer>
+    <% include ../include/footer %>
+</footer>
+
+</body>
+</html>

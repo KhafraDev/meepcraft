@@ -1,0 +1,48 @@
+<!-- views/pages/stats.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../include/head %>
+</head>
+<body class="container">
+
+<header>
+    <style type="text/css">
+        .jumbotron p {
+            font-size: 16px;
+        }
+    </style>
+    <% include ../include/header %>
+</header>
+
+<main>
+    <ul class="list-group">
+        <li class="list-group-item"><%= author %></li>
+        <li class="list-group-item"><%= forum %></li>
+        <li class="list-group-item"><%= date %></li>
+        <li class="list-group-item"><%= url %></li>
+    </ul>
+    <div class="jumbotron">
+        <% text.forEach(paragraph => { %>
+            <p><%= paragraph %></p>
+        <% }); %>
+    </div>
+    <% comments.forEach(comment => { %>
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p><%= comment.cText %></p>
+                    <footer class="blockquote-footer"><%= comment.cDate %> <cite title="Source Title"><%= comment.cAuthor %></cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    <% }); %>
+</main>
+
+<footer>
+    <% include ../include/footer %>
+</footer>
+
+</body>
+</html>
