@@ -1,0 +1,32 @@
+{
+  "name": "meepcraft-api-demo",
+  "version": "1.0.0",
+  "description": "A demo API for Meepcraft.com",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "memory-cache": "^0.2.0",
+    "node-cache": "^4.2.0",
+    "node-fetch": "^2.3.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhafraDev/meepcraft.git"
+  },
+  "keywords": [
+    "meepcraft"
+  ],
+  "author": "khafra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KhafraDev/meepcraft/issues"
+  },
+  "homepage": "https://github.com/KhafraDev/meepcraft#readme"
+}
