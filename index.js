@@ -13,4 +13,5 @@ app.get('/', (req, res) => {
 app.use('/meep', meep);
 
 //http.createServer(app).listen(80);
-https.createServer({}, app).listen(443);
+const port = process.env.PORT || 3000;
+https.createServer({}, app).listen(port);
