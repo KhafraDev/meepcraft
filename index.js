@@ -1,4 +1,4 @@
-//const http = require('http');
+const http = require('http');
 const https = require('https');
 const express = require('express');
 const app = express();
@@ -12,6 +12,6 @@ app.get('/', (req, res) => {
 
 app.use('/meep', meep);
 
-//http.createServer(app).listen(80);
 const port = process.env.PORT || 3000;
+http.createServer(app).listen(port);
 https.createServer({}, app).listen(port);
