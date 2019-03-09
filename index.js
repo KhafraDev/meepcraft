@@ -1,5 +1,5 @@
 const http = require('http');
-const https = require('https');
+//const https = require('https');
 const express = require('express');
 const app = express();
 const meep = require('./routes/meep.js');
@@ -14,4 +14,4 @@ app.use('/meep', meep);
 
 const port = process.env.PORT || 3000;
 http.createServer(app).listen(port);
-https.createServer({}, app).listen(port);
+//https.createServer({}, app).listen(port);
